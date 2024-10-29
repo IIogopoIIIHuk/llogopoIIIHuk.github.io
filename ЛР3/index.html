@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета для участия в конкурсе на лучший дизайн</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <h1>Анкета для участия в конкурсе на лучший дизайн</h1>
+    <form action="https://webhook.site/your-webhook-url" method="post">
+        <!-- Имя -->
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        
+        <!-- Фамилия -->
+        <div>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <br>
+        
+        <!-- Телефон -->
+        <div>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <br>
+        
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        
+        <!-- Пароль -->
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        
+        <!-- Категория дизайна -->
+        <div>
+            <label for="category">Категория дизайна</label>
+            <select name="category" id="category" required>
+                <option value="web">Веб-дизайн</option>
+                <option value="graphic">Графический дизайн</option>
+                <option value="industrial">Промышленный дизайн</option>
+            </select>
+        </div>
+        <br>
+        
+        <!-- Пол -->
+        <fieldset>
+            <legend>Пол</legend>
+            <label>
+                <input type="radio" name="gender" value="male" required> Мужской
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female" required> Женский
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other" required> Другой
+            </label>
+        </fieldset>
+        <br>
+        
+        <!-- Предпочтительные инструменты -->
+        <fieldset>
+            <legend>Ваши предпочтительные инструменты для дизайна</legend>
+            <label>
+                <input type="checkbox" name="tools[]" value="photoshop"> Photoshop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="tools[]" value="illustrator"> Illustrator
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="tools[]" value="figma"> Figma
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="tools[]" value="other"> Другие
+            </label>
+        </fieldset>
+        <br>
+        
+        <!-- Комментарий -->
+        <div>
+            <label for="comment">Ваш комментарий</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        
+        <!-- Загрузить файл -->
+        <div>
+            <label for="portfolio">Загрузите файл вашего дизайна</label>
+            <input type="file" id="portfolio" name="file">
+        </div>
+        <br>
+        
+        <!-- Согласие с условиями -->
+        <div>
+            <label>
+                <input type="checkbox" id="conditions" name="conditions" value="agree" required> Я согласен с условиями участия
+            </label>
+        </div>
+        <br>
+        
+        <!-- Сброс и отправка -->
+        <input type="reset" value="Сбросить">
+        <br>
+        <button type="submit">Отправить заявку</button>
+    </form>
+</main>
+
+</body>
+</html>
