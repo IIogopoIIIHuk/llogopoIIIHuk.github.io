@@ -10,42 +10,36 @@
 <main>
     <h1>Анкета для участия в конкурсе на лучший дизайн</h1>
     <form action="https://webhook.site/your-webhook-url" method="post">
-        <!-- Имя -->
         <div>
             <label for="name">Имя</label>
             <input type="text" id="name" name="name" required>
         </div>
         <br>
         
-        <!-- Фамилия -->
         <div>
             <label for="surname">Фамилия</label>
             <input type="text" id="surname" name="surname" required>
         </div>
         <br>
         
-        <!-- Телефон -->
         <div>
             <label for="phone">Телефон</label>
             <input type="tel" id="phone" name="phone" required>
         </div>
         <br>
         
-        <!-- Email -->
         <div>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" required>
         </div>
         <br>
         
-        <!-- Пароль -->
         <div>
             <label for="password">Пароль</label>
             <input type="password" id="password" name="password" required>
         </div>
         <br>
         
-        <!-- Категория дизайна -->
         <div>
             <label for="category">Категория дизайна</label>
             <select name="category" id="category" required>
@@ -56,7 +50,6 @@
         </div>
         <br>
         
-        <!-- Пол -->
         <fieldset>
             <legend>Пол</legend>
             <label>
@@ -73,7 +66,6 @@
         </fieldset>
         <br>
         
-        <!-- Предпочтительные инструменты -->
         <fieldset>
             <legend>Ваши предпочтительные инструменты для дизайна</legend>
             <label>
@@ -94,7 +86,6 @@
         </fieldset>
         <br>
         
-        <!-- Комментарий -->
         <div>
             <label for="comment">Ваш комментарий</label>
             <br>
@@ -102,14 +93,12 @@
         </div>
         <br>
         
-        <!-- Загрузить файл -->
         <div>
             <label for="portfolio">Загрузите файл вашего дизайна</label>
             <input type="file" id="portfolio" name="file">
         </div>
         <br>
         
-        <!-- Согласие с условиями -->
         <div>
             <label>
                 <input type="checkbox" id="conditions" name="conditions" value="agree" required> Я согласен с условиями участия
@@ -117,7 +106,6 @@
         </div>
         <br>
         
-        <!-- Сброс и отправка -->
         <input type="reset" value="Сбросить">
         <br>
         <button type="submit">Отправить заявку</button>

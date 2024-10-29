@@ -1,17 +1,17 @@
-/* 1. Установка фона отличного от белого */
 body {
-    background-color: #f0f8ff; /* Нежно-голубой фон */
+    background-color: #f0f8ff; 
+
     margin: 0;
     padding: 0;
 }
 
-/* 2. Ширина контента 1440px и его центрирование */
+
 .main {
     width: 1440px;
     margin: 0 auto;
 }
 
-/* 3. Подключение индивидуальных шрифтов для каждого фильма */
+
 @font-face {
     font-family: 'Opensans';
     src: url('fonts/MuseoSansCyrl-100.ttf');
@@ -27,7 +27,6 @@ body {
     src: url('fonts/MuseoSansCyrl-500.ttf');
 }
 
-/* Шрифты для каждого фильма */
 #cinema-one p {
     font-family: 'Opensans', sans-serif;
 }
@@ -40,9 +39,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* 4. Стили для якорных ссылок: черный цвет, без подчеркивания, убраны маркеры списка */
 ul {
-    list-style-type: none; /* Убираем маркеры списка */
+    list-style-type: none; 
     padding-left: 0;
 }
 
@@ -55,7 +53,6 @@ ul li {
     margin-bottom: 5px;
 }
 
-/* 5. Выровнять текст описания фильмов по-разному */
 #cinema-one p {
     text-align: center;
 }
@@ -68,26 +65,23 @@ ul li {
     text-align: left;
 }
 
-/* 6. Все изображения одинакового размера */
 .images img {
     width: 300px;
-    height: 200px; /* Фиксируем высоту для единообразия */
+    height: 200px; 
 }
 
-/* 7. Закругленные края для всех изображений */
 .images img {
-    border-radius: 15px; /* Радиус закругления */
+    border-radius: 15px; 
 }
 
-/* 8. Выделение жирным разными способами */
 #cinema-one p strong {
-    font-weight: bold; /* Через strong */
+    font-weight: bold;
 }
 
 #cinema-two p b {
-    font-weight: 700; /* Через тег <b> */
+    font-weight: 700; 
 }
 
 #cinema-three p {
-    font-weight: 600; /* Через CSS свойство font-weight */
+    font-weight: 600; 
 }
